@@ -2,6 +2,7 @@
 
 :root {
   --primary: linear-gradient(90deg, #00FFE0 0%, #00B2FF 100%);
+  --secondary: #929292;
 }
 
 /* Navbar */
@@ -12,13 +13,23 @@ nav {
   background: #FFFFFF;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 17px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   position: absolute;
   right: 50%;
   transform: translateX(50%);
   margin-top: 20px;
+}
+
+nav.open {
+  height: 160px;
+}
+
+nav .header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95vw;
+  height: 70px;
+  padding-inline: 30px;
 }
 
 nav .header {
@@ -44,6 +55,10 @@ nav .hamburger .line {
 
 nav .hamburger .line:not(:first-child) {
   margin-top: 10px;
+}
+
+nav ul li a {
+  color: var(--secondary);
 }
 
 ul.closed {
