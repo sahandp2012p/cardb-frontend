@@ -4,9 +4,13 @@ export default () => {
   return (
     <nav>
         <div className="header">CarDB</div>
-        <div className="hamgurger"></div>
+        <div className="hamburger">
+            <span className="line"></span>
+            <span className="line"></span>
+            <span className="line"></span>
+        </div>
 
-        <ul>
+        <ul className='closed'>
             <li><a href="#">Home</a></li>
             <li><a href="#">Login</a></li>
             <li><a href="#">Sign up</a></li>
