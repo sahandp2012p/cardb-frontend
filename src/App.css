@@ -16,11 +16,13 @@ nav {
   position: absolute;
   right: 50%;
   transform: translateX(50%);
-  margin-top: 20px;
+  transition: 0.3s;
+  margin-top: 10px;
 }
 
 nav.open {
   height: 160px;
+  transition: 0.3s;
 }
 
 nav .header-wrap {
@@ -63,4 +65,8 @@ nav ul li a {
 
 ul.closed {
   display: none;
+}
+
+h1 {
+  
 }
