@@ -7,21 +7,24 @@ export default () => {
   }
 
   return (
-    <nav>
-        <div className="header-wrap">
-          <div className="header">CarDB</div>
-          <div className="hamburger" onClick={handleChange}>
-              <span className="line"></span>
-              <span className="line"></span>
-              <span className="line"></span>
+    <> 
+      <nav>
+          <div className="header-wrap">
+            <div className="header">CarDB</div>
+            <div className="hamburger" onClick={handleChange}>
+                <span className="line"></span>
+                <span className="line"></span>
+                <span className="line"></span>
+            </div>
           </div>
-        </div>
 
-        <ul className='closed'>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Sign up</a></li>
-        </ul>
-    </nav>
+          <ul className='closed'>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Sign up</a></li>
+          </ul>
+      </nav>
+      <br />
+    </>
   )
 }
