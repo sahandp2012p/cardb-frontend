@@ -87,3 +87,12 @@ button {
   font-weight: bolder;
   text-transform: uppercase;
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 1.25rem;
+  color: var(--secondary);
+}
